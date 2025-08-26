@@ -1,0 +1,101 @@
+/* Light Theme */
+body {
+  background-color: oklch(1 0 0); /* White */
+  color: oklch(0.2 0.05 240); /* Dark Blue #003366 */
+  border-color: oklch(0.7 0.01 240); /* Medium Gray borders */
+  outline-color: oklch(0.55 0.15 220); /* Sky Blue focus ring */
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: oklch(0.96 0.01 240); /* Light Gray #f0f4f8 */
+  color: oklch(0.25 0.02 240); /* Dark text on cards */
+  border-radius: 0.5rem;
+  border: 1px solid oklch(0.7 0.01 240);
+}
+
+.popover {
+  background-color: oklch(1 0 0); /* White */
+  color: oklch(0.2 0.05 240); /* Dark Blue */
+}
+
+.primary {
+  background-color: oklch(0.2 0.05 240); /* Dark Blue #003366 */
+  color: oklch(1 0 0); /* White text */
+}
+
+.secondary {
+  background-color: oklch(0.7 0.01 240); /* Medium Gray */
+  color: oklch(0.2 0.05 240);
+}
+
+.muted {
+  background-color: oklch(0.96 0.01 240); /* Light Gray */
+  color: oklch(0.45 0.02 240); /* Medium text */
+}
+
+.accent {
+  background-color: oklch(0.55 0.15 220); /* Sky Blue #007acc */
+  color: oklch(1 0 0);
+}
+
+.destructive {
+  background-color: oklch(0.577 0.245 27.325);
+  color: oklch(1 0 0);
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: oklch(0.145 0 0);
+  color: oklch(0.985 0 0);
+  border-color: oklch(0.269 0 0);
+  outline-color: oklch(0.439 0 0);
+}
+
+body.dark .card {
+  background-color: oklch(0.145 0 0);
+  color: oklch(0.985 0 0);
+  border: 1px solid oklch(0.269 0 0);
+}
+
+body.dark .popover {
+  background-color: oklch(0.145 0 0);
+  color: oklch(0.985 0 0);
+}
+
+body.dark .primary {
+  background-color: oklch(0.985 0 0);
+  color: oklch(0.205 0 0);
+}
+
+body.dark .secondary {
+  background-color: oklch(0.269 0 0);
+  color: oklch(0.985 0 0);
+}
+
+body.dark .muted {
+  background-color: oklch(0.269 0 0);
+  color: oklch(0.708 0 0);
+}
+
+body.dark .accent {
+  background-color: oklch(0.269 0 0);
+  color: oklch(0.985 0 0);
+}
+
+body.dark .destructive {
+  background-color: oklch(0.396 0.141 25.723);
+  color: oklch(0.637 0.237 25.331);
+}
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+}
+
+body, .card, .popover, .primary, .secondary, .muted, .accent, .destructive {
+  border-radius: 0.5rem;
+  border: 1px solid currentColor;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
